@@ -4,9 +4,10 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- background: rgb(0,0,0);
- background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(66,48,1,1) 0%); 
- color: white;
+/*  background: rgb(0,0,0);
+ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(66,48,1,1) 0%);  */
+ background: #DAE2B6;
+ color: #FFFBE9;
 }
 
 .header{
