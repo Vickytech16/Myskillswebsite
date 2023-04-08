@@ -4,14 +4,12 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- /* background: rgb(0,0,0);
- background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(66,48,1,1) 0%);  */
- background-color: #DAE2B6;
- color: #FFFBE9;
+ background: rgb(0,0,0);
+ background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(66,48,1,1) 0%); 
 }
 
 .header{
- height: 10vh;
+ height: 20vh;
  text-align: center;
 }
 
@@ -24,7 +22,7 @@
  width: fit-content;
  margin-left: auto;
  margin-right: auto;
- margin-bottom: 20px;
+ margin-bottom: 40px;
 }
 
 div{
@@ -58,51 +56,24 @@ h3{
 }
 
 @media  screen and (min-width:1008px) {
- .content1{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: justify;
-} 
 
-.content2{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: justify;
-
-} 
+.content{
+ display: grid;
+ grid-template-areas: 
+ "a b c"
+ "d e f";
 }
 
-@media  screen and (min-width:576px) {
+}
 
- .sub1{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: justify;
- }
+@media  screen and (max-width:1007px) {
 
- .sub2{
- display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: justify;
- }
-
- .sub3{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: justify;
- }
-
- img{
- width: 75px;
- height: 75px;
- display: block;
- margin-right: auto;
- margin-left: auto;
+.content{
+ display: grid;
+ grid-template-areas: 
+ "a b"
+ "c d"
+ "e f";
 }
 
 } 
@@ -111,5 +82,9 @@ text-align: justify;
 div{
  margin-left: 3px;
  margin-right: 3px;
+}
+.content{
+ display: flex;
+ flex-direction: column;
 }
 }
